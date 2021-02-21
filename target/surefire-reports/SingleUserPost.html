@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>SingleUserPost</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-02-20 05:22:45 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:3]">[1:3] Validation Of Post Request </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">SingleUserPost.feature</span><span class="feature-description">Single User Post Request</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:3]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">Validation Of Post Request </span>
+</div>
+<div class="scenario-time passed">ms: 2002</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given url "https://reqres.in/"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="1">17:22:43.234 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">And path "api/users"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">* request read('Data/Body.json')</div>
+</div>
+<div class="time-cell passed">43</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">And header Accept = 'application/json'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">1954</div>
+</div>
+<div class="preformatted" data-parent="5">17:22:43.624 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 34
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_271)
+{"name":"morpheus","job":"leader"}
+
+17:22:45.252 response time in milliseconds: 1626.45
+1 &lt; 201
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 624bf8af5a2c2fda-ORD
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 84
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 20 Feb 2021 23:22:45 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=eSpnCz%2F3DUbWwLOdz1STjw6BfTIdOODi1sGK1E1tGdYKZ4LQ5t%2FPv2XlegIK71G%2F455tKEAb0dz%2BLZEAh%2BPj%2F%2FKIvTR8fDANiQs%3D"}]}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d2b0bbd63d99020c5747382140a1195941613863365; expires=Mon, 22-Mar-21 23:22:45 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; access-control-allow-origin: *
+1 &lt; cf-request-id: 086359c19600002fda92180000000001
+1 &lt; etag: W/"54-A12TdwkYIY7BX+ELitU1vzNtvYk"
+1 &lt; via: 1.1 vegur
+1 &lt; x-powered-by: Express
+{"name":"morpheus","job":"leader","id":"895","createdAt":"2021-02-20T23:22:45.183Z"}</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<testsuite failures="1" name="src/test/resources/SingleUser.feature" skipped="0" tests="1" time="0.600258">
+  <testcase classname="src.test.resources.SingleUser" name="Validation of single user" time="0.600258">
+    <failure message="SingleUser.feature:7 - path: $.data.id, actual: 2, expected: '#string', reason: not a string">Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* match $ == read('Data/User.json') ....................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: SingleUser.feature:7 - path: $.data.id, actual: 2, expected: '#string', reason: not a string
+	at ✽.* match $ == read('Data/User.json') (SingleUser.feature:7)
+
+* assert response.data.email == 'janet.weaver@reqres.in' .................. skipped
+* assert responseStatus == 200 || responseStatus == 201 ................... skipped
+* assert responseTime &lt; 400 ............................................... skipped
+* match response.data.first_name == "#string" ............................. skipped</failure>
+  </testcase>
+</testsuite>

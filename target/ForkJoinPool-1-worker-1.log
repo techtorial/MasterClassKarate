@@ -1,0 +1,62 @@
+17:34:50.531 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+17:34:50.964 request:
+1 > POST https://reqres.in/api/users
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 34
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_271)
+{"name":"morpheus","job":"leader"}
+
+17:34:51.413 response time in milliseconds: 448.49
+1 < 201
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 624c0a69fe7403ac-ORD
+1 < Connection: keep-alive
+1 < Content-Length: 84
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 20 Feb 2021 23:34:51 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=WtVxxx%2FsD1D%2FZItTKyc58Uu3XqS51v5RCclHOp0gJKNd4g2%2FVXiFV96Yo9dC4snwI9hvGP%2FiykpER5q7Vo4Hp9%2BI%2BXrpCyCTE9o%3D"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=ddf3ff2b5f80b1b363094f00aadda366f1613864091; expires=Mon, 22-Mar-21 23:34:51 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < access-control-allow-origin: *
+1 < cf-request-id: 086364d63a000003acc02eb000000001
+1 < etag: W/"54-oipHq7loUSyoTw+Lr1l7Ix590Fg"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"name":"morpheus","job":"leader","id":"228","createdAt":"2021-02-20T23:34:51.358Z"}
+
+17:34:51.429 request:
+2 > GET https://reqres.in/api/users/2
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=ddf3ff2b5f80b1b363094f00aadda366f1613864091
+2 > Host: reqres.in
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_271)
+
+17:34:51.557 response time in milliseconds: 126.48
+2 < 200
+2 < Access-Control-Allow-Origin: *
+2 < Age: 3565
+2 < CF-Cache-Status: HIT
+2 < CF-RAY: 624c0a6c2c633f8a-ORD
+2 < Cache-Control: max-age=14400
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Sat, 20 Feb 2021 23:34:51 GMT
+2 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < NEL: {"report_to":"cf-nel","max_age":604800}
+2 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=9kueGfCS4QiNoqL0Bw3jbRxYJ9pBHdzWTl5inUMKP76x13aMa2L1Xg8PeWRMHcyegH9USNALy%2Fto3y0YyBsHauuHnzSTAker0YA%3D"}],"max_age":604800}
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < Vary: Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Powered-By: Express
+2 < cf-request-id: 086364d79a00003f8a83909000000001
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+

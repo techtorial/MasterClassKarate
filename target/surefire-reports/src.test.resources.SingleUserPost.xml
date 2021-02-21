@@ -1,0 +1,16 @@
+<testsuite failures="0" name="src/test/resources/SingleUserPost.feature" skipped="0" tests="1" time="1.013796">
+  <testcase classname="src.test.resources.SingleUserPost" name="Validation Of Post Request" time="1.013796">
+    <system-out>Given url "https://reqres.in/" ............................................ passed
+And path "api/users" ...................................................... passed
+* request read('Data/Body.json') .......................................... passed
+And header Accept = 'application/json' .................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* match $ == read('Data/Response.json') ................................... passed
+* def userId = 2 .......................................................... passed
+Given url "https://reqres.in/api/users/" .................................. passed
+And path userId ........................................................... passed
+* method get .............................................................. passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
